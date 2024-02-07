@@ -12,9 +12,11 @@ class HomeController extends AbstractController
 {
     #[Route(path: '/{_locale}', name: 'app_home', requirements: ['_locale' => 'fr|en|it'])]
     // #[Route('/', name: 'app_home')
-    public function index(Request $request): Response
+    public function index(Request $request, TranslatorInterface $translator): Response
     {   
-        // dd($request);
-        return $this->render('home/index.html.twig');
+        $firstTranslation = $translator->trans('Salut');
+        $secondTranslation = $translator->trans('Ça fonctionne');
+
+        return $this->render('home/index.html.twig', compact('firstTranslation', 'secondTranslation'));
     }
 }
