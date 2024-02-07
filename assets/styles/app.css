@@ -1,0 +1,23 @@
+nav {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+h1 {
+    color: rgb(255, 136, 39);
+}
+
+h2 {
+    color: rgb(133, 17, 241);
+}
+
+p {
+    display: inline-block;
+    font-weight: bold;
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

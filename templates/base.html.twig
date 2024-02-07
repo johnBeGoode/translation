@@ -14,9 +14,10 @@
     </head>
     <body>
         <nav>
-            <li><a href="{{ path('app_home', {_locale: 'fr' }) }}" data-turbo="false">fr</a></li>
-            <li><a href="{{ path('app_home', {_locale: 'en' }) }}" data-turbo="false">en</a></li>
-            <li><a href="{{ path('app_home', {_locale: 'it' }) }}" data-turbo="false">it</a></li>
+            <li><a href="{{ path('app_home', {_locale: 'fr' }) }}" data-turbo="false"><img src="{{ asset('images/french_flag.png') }}" alt="french flag" width=32 height=32></a></li>
+            <li><a href="{{ path('app_home', {_locale: 'en' }) }}" data-turbo="false"><img src="{{ asset('images/english_flag.png') }}" alt="english flag" width=32 height=32></a></li>
+            <li><a href="{{ path('app_home', {_locale: 'it' }) }}" data-turbo="false"><img src="{{ asset('images/italian_flag.png') }}" alt="italian flag" width=32 height=32></a></li>
+            <li><a href="{{ path('app_home', {_locale: 'es' }) }}" data-turbo="false"><img src="{{ asset('images/spanish_flag.png') }}" alt="spanish flag" width=32 height=32></a></li>
         </nav>
         {% block body %}{% endblock %}
     </body>
